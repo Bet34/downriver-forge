@@ -8,172 +8,187 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
-        body { font-family: 'Inter', system_ui, sans-serif; }
+        
+        body { 
+            font-family: 'Inter', system_ui, sans-serif; 
+            background-color: #f8fafc;
+        }
         .font-display { font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif; font-weight: 600; }
-        .section-header { font-size: 2.6rem; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; }
-        .card { transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
+        .section-header { font-size: 2.75rem; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; color: #0f172a; }
+        .card { 
+            transition: all 0.3s cubic-bezier(0.4,0,0.2,1); 
+            background: white;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover { 
+            transform: translateY(-6px); 
+            box-shadow: 0 20px 25px -5px rgb(15 23 42 / 0.1), 0 8px 10px -6px rgb(15 23 42 / 0.1);
+            border-color: #10b981;
+        }
+        .nav-link { color: #334155; }
+        .nav-link:hover { color: #10b981; }
     </style>
 </head>
-<body class="bg-zinc-950 text-white">
-    <nav class="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-xl">
+<body class="text-slate-900">
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl">
         <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
             <div class="flex items-center gap-x-3">
-                <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center">
-                    <i class="fa-solid fa-infinity text-zinc-950 text-2xl"></i>
+                <div class="w-10 h-10 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-sm">
+                    <i class="fa-solid fa-infinity text-white text-2xl"></i>
                 </div>
                 <div>
-                    <span class="font-display text-3xl font-semibold tracking-tighter">Downriver</span>
-                    <span class="font-display text-3xl font-semibold tracking-tighter text-emerald-400">Forge</span>
+                    <span class="font-display text-3xl font-semibold tracking-tighter text-slate-900">Downriver</span>
+                    <span class="font-display text-3xl font-semibold tracking-tighter text-emerald-600">Forge</span>
                 </div>
             </div>
             <div class="flex items-center gap-x-8 text-sm font-medium">
-                <a href="#model" class="hover:text-emerald-400">The Self-Running Model</a>
-                <a href="#guides" class="hover:text-emerald-400">Free Guides</a>
-                <a href="#products" class="hover:text-emerald-400">Digital Products</a>
-                <a href="#contact" class="px-6 py-2.5 bg-emerald-500 text-zinc-950 font-bold rounded-2xl hover:bg-emerald-600 transition-colors">Start Your Site</a>
+                <a href="#model" class="nav-link hover:text-emerald-600 transition-colors">The Model</a>
+                <a href="#guides" class="nav-link hover:text-emerald-600 transition-colors">Guides</a>
+                <a href="#products" class="nav-link hover:text-emerald-600 transition-colors">Products</a>
+                <a href="#contact" class="px-6 py-2.5 bg-emerald-600 text-white font-bold rounded-2xl hover:bg-emerald-700 transition-all shadow-sm">Start Your Site</a>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <div class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
-        <div class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 px-4 py-1.5 rounded-3xl text-sm mb-8">
-            <span class="text-emerald-400 font-semibold">Built to run itself</span>
+    <div class="max-w-5xl mx-auto px-6 pt-16 pb-14 text-center">
+        <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-5 py-1.5 rounded-3xl text-sm font-semibold mb-8">
+            Built to run itself in 2026
         </div>
         
-        <h1 class="text-7xl md:text-[80px] font-display font-bold tracking-[-4px] leading-none mb-6">
-            Websites that<br>make money<br><span class="text-emerald-400">while you sleep.</span>
+        <h1 class="text-[64px] md:text-[78px] font-display font-bold tracking-[-3.8px] leading-none mb-6 text-slate-900">
+            Websites that make<br>money while you sleep.
         </h1>
         
-        <p class="max-w-2xl mx-auto text-2xl text-zinc-400 mb-10">
-            Local-focused, evergreen sites for Downriver and Metro Detroit. Built once. Optimized for passive income through content, affiliates, and digital products.
+        <p class="max-w-2xl mx-auto text-2xl text-slate-600 mb-10">
+            Local, evergreen sites for Downriver and Metro Detroit. Designed for passive income through content, affiliates, and digital products.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#model" class="inline-flex items-center justify-center gap-3 bg-white text-zinc-950 px-10 py-4 rounded-3xl font-bold text-lg hover:bg-zinc-100 transition-all">
+            <a href="#model" class="inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 rounded-3xl font-bold text-lg transition-all shadow-lg shadow-emerald-600/30">
                 See the Self-Running Model
             </a>
-            <a href="#products" class="inline-flex items-center justify-center gap-3 border border-zinc-700 hover:bg-zinc-900 px-8 py-4 rounded-3xl font-semibold text-lg transition-all">
-                Browse Products
+            <a href="#products" class="inline-flex items-center justify-center gap-3 border border-slate-300 hover:bg-slate-50 px-8 py-4 rounded-3xl font-semibold text-lg transition-all">
+                Browse Digital Products
             </a>
         </div>
     </div>
 
     <!-- SELF-RUNNING MODEL -->
-    <div id="model" class="bg-zinc-900 border-y border-zinc-800 py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-14">
-                <div class="text-emerald-400 text-sm font-bold tracking-[2px] mb-3">THE SYSTEM</div>
-                <h2 class="section-header">How these sites run themselves</h2>
+    <div id="model" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <div class="text-emerald-600 text-sm font-bold tracking-[2px] mb-3">THE SYSTEM</div>
+            <h2 class="section-header">How these sites run themselves</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="card rounded-3xl p-8">
+                <div class="text-emerald-600 text-5xl mb-6"><i class="fa-solid fa-search"></i></div>
+                <h3 class="font-semibold text-2xl mb-4 text-slate-900">Evergreen SEO Content</h3>
+                <p class="text-slate-600">Local guides that rank for years. One strong piece can drive traffic and commissions for 3–5+ years with almost zero maintenance.</p>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8">
-                    <div class="text-emerald-400 text-5xl mb-6"><i class="fa-solid fa-search"></i></div>
-                    <h3 class="font-semibold text-2xl mb-4">Evergreen SEO Content</h3>
-                    <p class="text-zinc-400">Local guides and comparisons that rank for years. One good piece of content can bring traffic and commissions for 3–5+ years with almost zero maintenance.</p>
-                </div>
-                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8">
-                    <div class="text-emerald-400 text-5xl mb-6"><i class="fa-solid fa-link"></i></div>
-                    <h3 class="font-semibold text-2xl mb-4">Affiliate Income Streams</h3>
-                    <p class="text-zinc-400">Recommend tools, software, and local services you actually use. Earn commissions on autopilot when people buy through your links.</p>
-                </div>
-                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8">
-                    <div class="text-emerald-400 text-5xl mb-6"><i class="fa-solid fa-download"></i></div>
-                    <h3 class="font-semibold text-2xl mb-4">Digital Products (Create Once)</h3>
-                    <p class="text-zinc-400">Sell templates, checklists, and systems that deliver instantly. High margin, zero fulfillment. Pure profit after creation.</p>
-                </div>
+            <div class="card rounded-3xl p-8">
+                <div class="text-emerald-600 text-5xl mb-6"><i class="fa-solid fa-link"></i></div>
+                <h3 class="font-semibold text-2xl mb-4 text-slate-900">Affiliate Income Streams</h3>
+                <p class="text-slate-600">Recommend tools and services you actually use. Earn commissions automatically when people buy through your links.</p>
             </div>
-            
-            <div class="mt-12 text-center text-sm text-zinc-400">
-                Minimal new content needed after the first 3–6 months. The site compounds over time.
+            <div class="card rounded-3xl p-8">
+                <div class="text-emerald-600 text-5xl mb-6"><i class="fa-solid fa-download"></i></div>
+                <h3 class="font-semibold text-2xl mb-4 text-slate-900">Digital Products</h3>
+                <p class="text-slate-600">Create once, sell forever. High-margin templates and systems with instant delivery and zero ongoing work.</p>
             </div>
         </div>
     </div>
 
     <!-- GUIDES -->
-    <div id="guides" class="max-w-7xl mx-auto px-6 py-20">
+    <div id="guides" class="max-w-7xl mx-auto px-6 py-16 bg-white border-y border-slate-200">
         <div class="mb-10">
-            <div class="text-emerald-400 text-sm font-semibold tracking-widest mb-2">FREE EVERGREEN GUIDES</div>
-            <h2 class="section-header">Local knowledge that keeps paying</h2>
+            <div class="text-emerald-600 text-sm font-bold tracking-widest mb-2">FREE LOCAL GUIDES</div>
+            <h2 class="section-header">Knowledge that keeps paying</h2>
         </div>
         
         <div class="grid md:grid-cols-3 gap-6">
-            <div class="card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-                <div class="uppercase text-xs tracking-widest text-emerald-400 mb-4">HOME SERVICES</div>
-                <h3 class="text-2xl font-semibold mb-4">How to Choose a Contractor in Downriver Without Regrets</h3>
-                <p class="text-zinc-400 mb-8">The exact 7-point checklist locals use before hiring anyone for big jobs.</p>
-                <a href="#contact" class="text-emerald-400 font-medium flex items-center gap-2">Read the guide <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="card rounded-3xl p-8">
+                <div class="text-xs font-bold tracking-widest text-emerald-600 mb-4">HOME SERVICES</div>
+                <h3 class="text-2xl font-semibold mb-4">How to Vet a Contractor in Downriver</h3>
+                <p class="text-slate-600 mb-8">The exact checklist locals use before hiring for plumbing, electrical, or HVAC work.</p>
+                <a href="#contact" class="text-emerald-600 font-semibold flex items-center gap-2">Read the free guide <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             
-            <div class="card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-                <div class="uppercase text-xs tracking-widest text-emerald-400 mb-4">SIDE HUSTLES</div>
+            <div class="card rounded-3xl p-8">
+                <div class="text-xs font-bold tracking-widest text-emerald-600 mb-4">SIDE HUSTLES</div>
                 <h3 class="text-2xl font-semibold mb-4">Local Side Hustles That Actually Work in 2026</h3>
-                <p class="text-zinc-400 mb-8">Real opportunities using skills most people in Downriver already have.</p>
-                <a href="#contact" class="text-emerald-400 font-medium flex items-center gap-2">Read the guide <i class="fa-solid fa-arrow-right"></i></a>
+                <p class="text-slate-600 mb-8">Real opportunities using skills most people in Downriver already have.</p>
+                <a href="#contact" class="text-emerald-600 font-semibold flex items-center gap-2">Read the free guide <i class="fa-solid fa-arrow-right"></i></a>
             </div>
             
-            <div class="card bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
-                <div class="uppercase text-xs tracking-widest text-emerald-400 mb-4">TOOLS</div>
-                <h3 class="text-2xl font-semibold mb-4">Tools That Survive Michigan Winters & Daily Abuse</h3>
-                <p class="text-zinc-400 mb-8">What actually lasts for local handymen and serious DIYers.</p>
-                <a href="#contact" class="text-emerald-400 font-medium flex items-center gap-2">Read the guide <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="card rounded-3xl p-8">
+                <div class="text-xs font-bold tracking-widest text-emerald-600 mb-4">TOOLS & GEAR</div>
+                <h3 class="text-2xl font-semibold mb-4">Tools That Survive Michigan Weather</h3>
+                <p class="text-slate-600 mb-8">What actually holds up for local handymen and serious DIYers.</p>
+                <a href="#contact" class="text-emerald-600 font-semibold flex items-center gap-2">Read the free guide <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
 
     <!-- DIGITAL PRODUCTS -->
-    <div id="products" class="bg-zinc-900 border-y border-zinc-800 py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <div class="text-emerald-400 text-sm font-bold tracking-widest mb-3">DIGITAL PRODUCTS</div>
-                <h2 class="section-header">Create once. Sell forever.</h2>
+    <div id="products" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <div class="text-emerald-600 text-sm font-bold tracking-widest mb-3">DIGITAL PRODUCTS</div>
+            <h2 class="section-header">Create once. Sell forever.</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="card rounded-3xl p-9">
+                <div class="text-emerald-600 text-xs font-bold tracking-widest mb-4">BEST SELLER</div>
+                <h3 class="text-3xl font-semibold mb-3">Local Service Contract Pack</h3>
+                <p class="text-slate-600 mb-8">Ready-to-use contracts, invoices, and agreements for trades and service businesses.</p>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-5xl font-bold">$47</span>
+                    <span class="text-slate-500">one-time</span>
+                </div>
+                <a href="#contact" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-2xl transition-colors">Get Instant Access</a>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="card bg-zinc-950 border border-zinc-800 rounded-3xl p-9">
-                    <div class="text-emerald-400 text-xs font-bold tracking-widest mb-4">BEST SELLER</div>
-                    <h3 class="text-3xl font-semibold mb-3">Local Service Contract Pack</h3>
-                    <p class="text-zinc-400 mb-8">Ready-to-customize contracts, invoices, and agreements used by real Downriver trades.</p>
-                    <div class="text-5xl font-semibold mb-1">$47</div>
-                    <div class="text-sm text-zinc-400 mb-6">One-time purchase • Instant download</div>
-                    <a href="#contact" class="block text-center bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold py-3.5 rounded-2xl">Get Instant Access</a>
+            <div class="card rounded-3xl p-9">
+                <h3 class="text-3xl font-semibold mb-3">Downriver Lead Gen Playbook</h3>
+                <p class="text-slate-600 mb-8">The exact system for getting consistent local leads without paid ads.</p>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-5xl font-bold">$67</span>
+                    <span class="text-slate-500">one-time</span>
                 </div>
-                
-                <div class="card bg-zinc-950 border border-zinc-800 rounded-3xl p-9">
-                    <h3 class="text-3xl font-semibold mb-3">Downriver Lead Generation Playbook</h3>
-                    <p class="text-zinc-400 mb-8">The exact system for getting consistent local leads without spending on ads.</p>
-                    <div class="text-5xl font-semibold mb-1">$67</div>
-                    <div class="text-sm text-zinc-400 mb-6">One-time purchase • Instant download</div>
-                    <a href="#contact" class="block text-center border border-zinc-700 hover:bg-zinc-900 font-bold py-3.5 rounded-2xl">Get the Playbook</a>
+                <a href="#contact" class="block text-center border border-slate-300 hover:bg-slate-50 font-bold py-3.5 rounded-2xl transition-colors">Get the Playbook</a>
+            </div>
+            
+            <div class="card rounded-3xl p-9">
+                <h3 class="text-3xl font-semibold mb-3">Home Service Pricing Calculator</h3>
+                <p class="text-slate-600 mb-8">Stop underbidding. Includes Excel + Google Sheets versions.</p>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-5xl font-bold">$29</span>
+                    <span class="text-slate-500">one-time</span>
                 </div>
-                
-                <div class="card bg-zinc-950 border border-zinc-800 rounded-3xl p-9">
-                    <h3 class="text-3xl font-semibold mb-3">Home Service Pricing Calculator</h3>
-                    <p class="text-zinc-400 mb-8">Stop underbidding. Excel + Google Sheets version included.</p>
-                    <div class="text-5xl font-semibold mb-1">$29</div>
-                    <div class="text-sm text-zinc-400 mb-6">One-time purchase • Instant download</div>
-                    <a href="#contact" class="block text-center border border-zinc-700 hover:bg-zinc-900 font-bold py-3.5 rounded-2xl">Get the Calculator</a>
-                </div>
+                <a href="#contact" class="block text-center border border-slate-300 hover:bg-slate-50 font-bold py-3.5 rounded-2xl transition-colors">Get the Calculator</a>
             </div>
         </div>
     </div>
 
     <!-- FINAL CTA -->
-    <div id="contact" class="max-w-2xl mx-auto px-6 py-20 text-center">
-        <h2 class="text-5xl font-display font-bold tracking-tighter mb-5">Ready to build your own self-running site?</h2>
-        <p class="text-xl text-zinc-400 mb-9">I help people in Downriver and Metro Detroit launch these exact types of sites — local, evergreen, and designed to generate income with minimal ongoing work.</p>
-        
-        <a href="mailto:Betteleym87@outlook.com?subject=Downriver%20Forge%20Self-Running%20Site" class="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold px-12 py-4 rounded-3xl text-lg transition-all">
-            Start My Self-Running Site
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-        
-        <p class="text-xs text-zinc-500 mt-6">Email me and I’ll walk you through the exact process.</p>
+    <div id="contact" class="bg-emerald-600 py-16">
+        <div class="max-w-2xl mx-auto px-6 text-center text-white">
+            <h2 class="text-5xl font-display font-bold tracking-tighter mb-5">Ready to launch your own self-running site?</h2>
+            <p class="text-xl text-emerald-100 mb-9">I help people in Downriver and Metro Detroit build these exact types of sites — local, evergreen, and designed to generate income with minimal ongoing work.</p>
+            
+            <a href="mailto:Betteleym87@outlook.com?subject=Downriver%20Forge%20Self-Running%20Site" class="inline-flex items-center justify-center gap-3 bg-white text-emerald-700 font-bold px-12 py-4 rounded-3xl text-lg hover:bg-emerald-50 transition-all">
+                Start My Self-Running Site
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            
+            <p class="text-emerald-200 text-sm mt-6">Email me and I’ll walk you through the exact process.</p>
+        </div>
     </div>
 
-    <footer class="border-t border-zinc-800 py-8 text-xs text-zinc-500">
+    <footer class="border-t border-slate-200 py-8 text-xs text-slate-500 bg-white">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-y-3">
             <div>© 2026 Downriver Forge — Websites that run themselves.</div>
             <div>Affiliate links & digital products. Built for long-term local income.</div>
