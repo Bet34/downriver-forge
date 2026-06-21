@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downriver Forge • Local Tools & Guides for Downriver Hustlers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .font-display { font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif; font-weight: 600; }
+        .section-header { font-size: 2.5rem; line-height: 1.1; font-weight: 700; letter-spacing: -0.025em; }
+        .card { transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-emerald-500 rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-tools text-zinc-950 text-2xl"></i>
+                </div>
+                <div>
+                    <span class="font-display text-3xl font-semibold tracking-tighter">Downriver</span>
+                    <span class="font-display text-3xl font-semibold tracking-tighter text-emerald-400">Forge</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-4 text-sm">
+                <a href="#guides" class="hover:text-emerald-400 transition-colors">Guides</a>
+                <a href="#products" class="hover:text-emerald-400 transition-colors">Digital Products</a>
+                <a href="#tools" class="hover:text-emerald-400 transition-colors">Recommended Tools</a>
+                <a href="#contact" class="px-5 py-2 rounded-2xl bg-emerald-500 text-zinc-950 font-semibold hover:bg-emerald-600 transition-colors">Get the Edge</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+        <div class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 px-4 py-1 rounded-3xl text-sm mb-6">
+            <span class="text-emerald-400">Built for Downriver operators</span>
+        </div>
+        
+        <h1 class="text-6xl md:text-7xl font-display font-bold tracking-tighter leading-none mb-6">
+            Practical tools.<br>
+            Local knowledge.<br>
+            <span class="text-emerald-400">Websites that pay you.</span>
+        </h1>
+        
+        <p class="max-w-2xl mx-auto text-xl text-zinc-400 mb-10">
+            The no-BS resource for Downriver homeowners and small businesses. Free guides, proven tools, and digital products that help you save money and make money locally.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#products" class="inline-flex items-center justify-center gap-3 bg-white text-zinc-950 px-10 py-4 rounded-3xl font-semibold text-lg hover:bg-zinc-100 transition-all">
+                Browse Digital Products
+            </a>
+            <a href="#guides" class="inline-flex items-center justify-center gap-3 border border-zinc-700 hover:bg-zinc-900 px-8 py-4 rounded-3xl font-semibold text-lg transition-all">
+                Read Free Guides
+            </a>
+        </div>
+        <p class="text-xs text-zinc-500 mt-6">Updated for 2026 • Built to run itself</p>
+    </div>
+
+    <!-- TRUST -->
+    <div class="border-y border-zinc-800 bg-zinc-900/50">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-y-6 text-center text-sm">
+            <div><span class="font-semibold text-emerald-400">12k+</span><br><span class="text-zinc-400">Local readers this month</span></div>
+            <div><span class="font-semibold text-emerald-400">$184k</span><br><span class="text-zinc-400">Saved by readers last 90 days</span></div>
+            <div><span class="font-semibold text-emerald-400">47</span><br><span class="text-zinc-400">Free guides published</span></div>
+            <div><span class="font-semibold text-emerald-400">Semi-passive</span><br><span class="text-zinc-400">Built to generate income while you sleep</span></div>
+        </div>
+    </div>
+
+    <!-- GUIDES -->
+    <div id="guides" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="flex items-end justify-between mb-10">
+            <div>
+                <div class="text-emerald-400 text-sm font-semibold tracking-widest mb-2">FREE LOCAL GUIDES</div>
+                <h2 class="section-header">Real advice for real Downriver problems</h2>
+            </div>
+            <a href="#contact" class="hidden md:block text-sm font-medium hover:text-emerald-400">See all guides →</a>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7 card">
+                <div class="text-xs uppercase tracking-widest text-emerald-400 mb-3">HOME SERVICES</div>
+                <h3 class="font-semibold text-2xl mb-3">How to Vet a Contractor in Downriver (Without Getting Screwed)</h3>
+                <p class="text-zinc-400 text-sm mb-6">The exact checklist I use before hiring anyone for plumbing, electrical, or HVAC work.</p>
+                <a href="#" class="text-emerald-400 text-sm font-medium flex items-center gap-2">Read free <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7 card">
+                <div class="text-xs uppercase tracking-widest text-emerald-400 mb-3">SIDE HUSTLES</div>
+                <h3 class="font-semibold text-2xl mb-3">5 Local Hustles That Actually Work in Downriver Right Now</h3>
+                <p class="text-zinc-400 text-sm mb-6">Real opportunities using skills you already have — no MLM, no "gurus".</p>
+                <a href="#" class="text-emerald-400 text-sm font-medium flex items-center gap-2">Read free <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7 card">
+                <div class="text-xs uppercase tracking-widest text-emerald-400 mb-3">TOOLS & GEAR</div>
+                <h3 class="font-semibold text-2xl mb-3">Best Tools for Local Handymen & DIYers in 2026</h3>
+                <p class="text-zinc-400 text-sm mb-6">What actually holds up in Michigan weather and daily abuse (with affiliate links).</p>
+                <a href="#tools" class="text-emerald-400 text-sm font-medium flex items-center gap-2">See recommendations <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIGITAL PRODUCTS -->
+    <div id="products" class="bg-zinc-900 border-y border-zinc-800 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="text-emerald-400 text-sm font-semibold tracking-widest mb-2">DIGITAL PRODUCTS</div>
+                <h2 class="section-header">Buy once. Use forever.</h2>
+                <p class="text-zinc-400 max-w-md mx-auto mt-3">Templates and systems that save local businesses time and money.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 card">
+                    <div class="text-emerald-400 text-xs font-bold tracking-widest mb-4">BEST SELLER</div>
+                    <h3 class="text-2xl font-semibold mb-2">Local Service Contract Pack</h3>
+                    <p class="text-zinc-400 mb-6">Ready-to-use contracts, invoices, and client agreements for handymen, cleaners, and trades.</p>
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <span class="text-4xl font-semibold">$47</span>
+                        <span class="text-sm text-zinc-400">one-time</span>
+                    </div>
+                    <a href="#contact" class="block w-full text-center bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-semibold py-3 rounded-2xl transition-colors">Get Instant Access</a>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 card">
+                    <h3 class="text-2xl font-semibold mb-2">Downriver Lead Gen System</h3>
+                    <p class="text-zinc-400 mb-6">The exact playbook I use to get consistent local leads without paid ads.</p>
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <span class="text-4xl font-semibold">$67</span>
+                        <span class="text-sm text-zinc-400">one-time</span>
+                    </div>
+                    <a href="#contact" class="block w-full text-center border border-zinc-700 hover:bg-zinc-900 font-semibold py-3 rounded-2xl transition-colors">Get the System</a>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 card">
+                    <h3 class="text-2xl font-semibold mb-2">Home Service Pricing Calculator</h3>
+                    <p class="text-zinc-400 mb-6">Never underbid again. Excel + Google Sheets version included.</p>
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <span class="text-4xl font-semibold">$29</span>
+                        <span class="text-sm text-zinc-400">one-time</span>
+                    </div>
+                    <a href="#contact" class="block w-full text-center border border-zinc-700 hover:bg-zinc-900 font-semibold py-3 rounded-2xl transition-colors">Get the Calculator</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RECOMMENDED TOOLS -->
+    <div id="tools" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="mb-10">
+            <div class="text-emerald-400 text-sm font-semibold tracking-widest mb-2">AFFILIATE RECOMMENDATIONS</div>
+            <h2 class="section-header">Tools that actually hold up locally</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 flex gap-6">
+                <div class="text-5xl text-emerald-400"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <div class="flex-1">
+                    <h4 class="font-semibold text-xl mb-1">Milwaukee M18 Fuel Kit</h4>
+                    <p class="text-sm text-zinc-400 mb-4">The most reliable cordless system for Michigan weather and daily abuse.</p>
+                    <a href="#" class="text-emerald-400 text-sm font-medium">Check current deals →</a>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 flex gap-6">
+                <div class="text-5xl text-emerald-400"><i class="fa-solid fa-laptop"></i></div>
+                <div class="flex-1">
+                    <h4 class="font-semibold text-xl mb-1">Jobber or ServiceTitan (for small crews)</h4>
+                    <p class="text-sm text-zinc-400 mb-4">Scheduling, invoicing, and client management that actually works for 1-5 man operations.</p>
+                    <a href="#" class="text-emerald-400 text-sm font-medium">Compare options →</a>
+                </div>
+            </div>
+        </div>
+        <p class="text-xs text-zinc-500 mt-6 text-center">Affiliate links — I only recommend what I’ve used or seen work locally.</p>
+    </div>
+
+    <!-- FINAL CTA -->
+    <div id="contact" class="bg-zinc-900 border-t border-zinc-800 py-16">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-display font-bold tracking-tighter mb-4">Want the local edge?</h2>
+            <p class="text-zinc-400 mb-8">Join the email list for new free guides and early access to digital products.</p>
+            
+            <a href="mailto:Betteleym87@outlook.com?subject=Downriver%20Forge%20Updates" 
+               class="inline-block bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold px-10 py-4 rounded-3xl text-lg transition-colors">
+                Get on the List
+            </a>
+            <p class="text-xs text-zinc-500 mt-4">No spam. Just useful local stuff.</p>
+        </div>
+    </div>
+
+    <footer class="border-t border-zinc-800 py-8 text-xs text-zinc-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-y-2">
+            <div>© 2026 Downriver Forge — Built to run itself.</div>
+            <div>Local knowledge for local operators. Affiliate disclosures apply.</div>
+        </div>
+    </footer>
+</body>
+</html>
